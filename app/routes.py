@@ -8,4 +8,8 @@ def register_routes(app):
     @app.route("/ping", methods=["GET"])
     def ping():
         return jsonify({"message": "pong"}), 200
+    @app.route("/contact", methods=["GET"])
+    def contact():
+    	return jsonify({"email": "support@devconnect.com"}), 200
+
 
