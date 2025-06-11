@@ -11,5 +11,7 @@ def register_routes(app):
     @app.route("/contact", methods=["GET"])
     def contact():
     	return jsonify({"email": "support@devconnect.com"}), 200
-
+    @app.route("/about", methods=["GET"])
+    def about():
+    	return jsonify({"app": "DevConnect", "purpose": "CI/CD Practice"}), 200
 
