@@ -14,4 +14,6 @@ def register_routes(app):
     @app.route("/about", methods=["GET"])
     def about():
     	return jsonify({"app": "DevConnect", "purpose": "CI/CD Practice"}), 200
-
+    @app.route("/version", methods=["GET"])
+    def version():
+    	return jsonify({"version": "1.0.0"}), 200
